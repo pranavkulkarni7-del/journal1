@@ -1,18 +1,19 @@
+# simple_interest.py
+
 import sys
 
-if(len(sys.argv)) == 4:
-    principal = sys.argv[1]
-    rate = sys.argv[2]
-    time = sys.argv[3]
+if len(sys.argv) == 4:
+    script_name=sys.argv[0]
+    p = float(sys.argv[1])  # Principal
+    r = float(sys.argv[2])  # Rate
+    t = float(sys.argv[3])  # Time
+        
 else:
-    principal = 900
-    rate = 0.1
-    time = 5
+    script_name=sys.argv[0]
+    p=10000
+    r=10
+    t=3
 
-interest=(principal*rate*time)/100
 
-print("\n--- Simple Interest Calculator ---")
-print("Principal Amount: ",principal)
-print("Rate of Interest: ",rate)
-print("Time Period:",time)
-print("Simple Interest:",interest)
+si = (p * r * t) / 100
+print(f"Simple Interest: {si}")
