@@ -1,13 +1,13 @@
 import sys
 
-if len(sys.argv) == 4:
-   principal = sys.argv[1]
-   rate = sys.argv[2]
-   time = sys.argv[3]
+if(len(sys.argv)) == 4:
+    principal = sys.argv[1]
+    rate = sys.argv[2]
+    time = sys.argv[3]
 else:
-   principal = 900   
-   rate = 0.1
-   time = 5
+    principal = 900
+    rate = 0.1
+    time = 5
 
 interest = (principal * rate * time) / 100
 
