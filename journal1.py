@@ -12,7 +12,7 @@ else:
 interest=(principal*rate*time)/100
 
 print("\n--- Simple Interest Calculator ---")
-print("Principal Amount: ₹",principal)
-print("Rate of Interest: ",rate})
+print("Principal Amount: ",principal)
+print("Rate of Interest: ",rate)
 print("Time Period:",time)
-print("Simple Interest: ₹",interest)
+print("Simple Interest:",interest)
